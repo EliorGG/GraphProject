@@ -1,0 +1,36 @@
+package core;
+
+import java.util.Objects;
+
+public class Edge {
+    private int left;
+    private int right;
+    public Edge(int left, int right) {
+        this.left = left;
+        this.right = right;
+    }
+    public int getLeft() {
+        return left;
+    }
+    public int getRight() {
+        return right;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Edge edge = (Edge) o;
+        return left == edge.left && right == edge.right;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(left, right);
+    }
+
+    @Override
+    public Edge clone() {
+        return new Edge(left, right);
+    }
+}

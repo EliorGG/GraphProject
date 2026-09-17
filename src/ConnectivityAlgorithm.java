@@ -1,6 +1,9 @@
+import algorithms.GraphAlgorithm;
+import core.Graph;
+
 import java.util.Iterator;
 
-public class ConnectivityAlgorithm extends GraphAlgorithm{
+public class ConnectivityAlgorithm extends GraphAlgorithm {
     private boolean[] visited;
     public ConnectivityAlgorithm(Graph g) {
         super(g);

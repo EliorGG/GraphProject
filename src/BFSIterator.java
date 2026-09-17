@@ -1,3 +1,5 @@
+import core.Graph;
+
 import java.util.*;
 
 public class BFSIterator implements Iterator<Integer> {

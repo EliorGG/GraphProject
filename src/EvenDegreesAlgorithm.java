@@ -1,4 +1,7 @@
-public class EvenDegreesAlgorithm extends GraphAlgorithm{
+import algorithms.GraphAlgorithm;
+import core.Graph;
+
+public class EvenDegreesAlgorithm extends GraphAlgorithm {
 
     public EvenDegreesAlgorithm(Graph g) {super(g);}
 
